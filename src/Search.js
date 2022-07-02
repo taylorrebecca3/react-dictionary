@@ -5,10 +5,10 @@ import Results from "./Results";
 
 export default function Search() {
   let [word, setWord] = useState("");
-  let [definition, setDefintion] = useState({});
+  let [definition, setDefinition] = useState(null);
 
   function handleResponse(response) {
-    setDefintion(response.data[0]);
+    setDefinition(response.data[0]);
   }
 
   function handleNewWord(event) {
@@ -21,11 +21,13 @@ export default function Search() {
     axios.get(apiUrl).then(handleResponse);
   }
   return (
-    <div className="Search">
-      <form onSubmit={searching}>
-        <input type="search" onChange={handleNewWord} />
-      </form>
-      <Results results={definition} />
+    <div className="container">
+      <div className="Search">
+        <form onSubmit={searching}>
+          <input type="search" onChange={handleNewWord} />
+        </form>
+        <Results results={definition} />
+      </div>
     </div>
   );
 }
