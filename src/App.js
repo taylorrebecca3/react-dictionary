@@ -4,7 +4,7 @@ import Search from "./Search";
 export default function App() {
   return (
     <div className="App">
-      <header>What in the World?</header>
+      <header>What in the Word?</header>
       <main>
         <Search />
       </main>

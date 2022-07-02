@@ -1,5 +1,8 @@
+body {
+  background: #e7eaf6;
+}
 header {
-  font-size: 76px;
-  color: burlywood;
+  font-size: 70px;
+  color: #113f67;
   text-align: center;
 }
