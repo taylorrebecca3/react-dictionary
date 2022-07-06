@@ -8,7 +8,16 @@ export default function App() {
       <main>
         <Search />
       </main>
-      <footer className="text-center">Coded by Rebecca Taylor</footer>
+      <footer className="text-center">
+        Coded by{" "}
+        <a
+          href="https://github.com/taylorrebecca3/react-dictionary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Rebecca Taylor
+        </a>
+      </footer>
     </div>
   );
 }
