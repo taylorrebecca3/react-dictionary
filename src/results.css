@@ -3,4 +3,15 @@ h3 {
 }
 h2 {
   color: #38598b;
+  margin-top: 20px;
+}
+#word {
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 10%);
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+#type {
+  box-shadow: 0 5px 5px rgb(0, 0, 0, 10%);
+  margin-bottom: 10px;
+  padding: 5px 5px;
 }

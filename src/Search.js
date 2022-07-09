@@ -23,9 +23,15 @@ export default function Search() {
   return (
     <div className="container">
       <div className="Search">
-        <form onSubmit={searching}>
-          <input type="search" onChange={handleNewWord} />
-        </form>
+        <section>
+          <form onSubmit={searching}>
+            <input
+              type="search"
+              onChange={handleNewWord}
+              placeholder="What word are you looking for?"
+            />
+          </form>
+        </section>
         <Results results={definition} />
       </div>
     </div>
